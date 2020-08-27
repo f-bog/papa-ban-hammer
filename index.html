@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <title>Papa Ban Hammer</title>
+  </head>
+  <style>
+    body {
+      background: rgb(51, 51, 51);
+      overflow: hidden;
+    }
+    .score {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      font-family: 'Courgette', cursive;
+    }
+    .papa,
+    .yodan {
+      position: relative;
+      --x: 0;
+      --y: 0;
+      transform: translateX(var(--x)) translateY(var(--y))
+        rotateY(var(--rotateX)) rotate(var(--rotate));
+      transition: transform 0.2s;
+    }
+    .yodan {
+      position: relative;
+      --yodanX: 0;
+      --yodanY: 0;
+      transform: translateX(var(--yodanX)) translateY(var(--yodanY))
+        rotateY(var(--rotateX)) rotate(var(--rotate));
+      transition: transform 0.2s;
+    }
+  </style>
+  <body>
+    <h1 class="score">score:</h1>
+    <img width="100" src="./yodan.png" alt="Yodan" class="yodan" />
+    <img width="150" src="./papaMODS.png" alt="Papa" class="papa" />
+    <script src="./game.js"></script>
+  </body>
+</html>
